@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Blog Fish</title>
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle|Old+Standard+TT&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="grid-layout.css">
+    <style>
+        * {
+            margin: 0;
+            color: mediumblue;
+        }
+        nav {
+            font-family: 'Old Standard TT', serif;
+            background-color: mediumblue;
+            color: gold;
+            font-size: 1.5em;
+            text-align: center;
+            width: 100vw;
+            margin: 0;
+            padding: 10px;
+            position: sticky;
+        }
+        footer {
+            font-family: 'News Cycle', sans-serif;
+            background-color: mediumblue;
+            color: gold;
+            font-size: 1em;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+        }
+        .blue {
+            background-color: mediumblue;
+            color: whitesmoke;
+            height: 88vh;
+            width: 30vw;
+        }
+        .secret {
+            position: absolute;
+            right: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            🐠 Welcome to Blog Fish!
+        </nav>
+    </header>
+    <main>
+        <section class="blue secret"></section>
+        <section class="container">
+            <div class="row">
+                <div class="column three-quart">???</div>
+                <div class="column one-quart blue">???</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Codeup - For Educational Purposes
+    </footer>
+</body>
+</html>
