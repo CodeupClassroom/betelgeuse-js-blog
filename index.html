@@ -42,6 +42,12 @@
             right: 0;
             z-index: -1;
         }
+        .categories {
+            color: dimgrey;
+        }
+        label {
+            color: whitesmoke;
+        }
     </style>
 </head>
 <body>
@@ -54,13 +60,81 @@
         <section class="blue secret"></section>
         <section class="container">
             <div class="row">
-                <div class="column three-quart">???</div>
-                <div class="column one-quart blue">???</div>
+                <div id="blog-posts" class="column three-quart">???</div>
+                <div class="column one-quart blue">
+                    <label for="firstName">First:</label>
+                    <input id="firstName" type="text">
+                    <br>
+                    <label for="lastName">Last:</label>
+                    <input id="lastName" type="text">
+                    <br>
+                    <label for="title">Title:</label>
+                    <input id="title" type="text">
+                    <br>
+                    <label for="body">Body:</label>
+                    <textarea name="body" id="body" cols="30" rows="10"></textarea>
+                    <label for="cat1">Categories</label>
+                    <br>
+                    <select name="category1" id="cat1">
+                        <option value="pirate">Pirate</option>
+                        <option value="funny">Funny</option>
+                        <option value="heart-warming">Heart Warming</option>
+                        <option value="privateering">Privateering</option>
+                        <option value="astronomy">Astronomy</option>
+                        <option value="cooking">Cooking</option>
+                        <option value="drums">Drums</option>
+                        <option value="lolly-gagging">Lolly Gagging</option>
+                        <option value="scally-wag">Scally Wag</option>
+                        <option value="sharks">SHARKS!</option>
+                        <option value="treasure">Treasure</option>
+                        <option value="drift-racing">Initial D</option>
+                    </select>
+                    <br>
+                    <select name="category2" id="cat2">
+                        <option value="pirate">Pirate</option>
+                        <option value="funny">Funny</option>
+                        <option value="heart-warming">Heart Warming</option>
+                        <option value="privateering">Privateering</option>
+                        <option value="astronomy">Astronomy</option>
+                        <option value="cooking">Cooking</option>
+                        <option value="drums">Drums</option>
+                        <option value="lolly-gagging">Lolly Gagging</option>
+                        <option value="scally-wag">Scally Wag</option>
+                        <option value="sharks">SHARKS!</option>
+                        <option value="treasure">Treasure</option>
+                        <option value="drift-racing">Initial D</option>
+                    </select>
+                    <br>
+                    <select name="category3" id="cat3">
+                        <option value="pirate">Pirate</option>
+                        <option value="funny">Funny</option>
+                        <option value="heart-warming">Heart Warming</option>
+                        <option value="privateering">Privateering</option>
+                        <option value="astronomy">Astronomy</option>
+                        <option value="cooking">Cooking</option>
+                        <option value="drums">Drums</option>
+                        <option value="lolly-gagging">Lolly Gagging</option>
+                        <option value="scally-wag">Scally Wag</option>
+                        <option value="sharks">SHARKS!</option>
+                        <option value="treasure">Treasure</option>
+                        <option value="drift-racing">Initial D</option>
+                    </select>
+                    <br>
+                    <button id="submitNew">Submit Post</button>
+                    <br>
+                    <hr>
+                    <br>
+                    <label for="query">Search: </label>
+                    <input id="query" type="text">
+                    <br>
+                    <button id="submitQuery">Search</button>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         Codeup - For Educational Purposes
     </footer>
+    <script src="blog.js"></script>
 </body>
 </html>
